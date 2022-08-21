@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AEF46AF28B2449A0041281F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46AE28B2449A0041281F /* AppDelegate.swift */; };
+		4AEF46B128B2449A0041281F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46B028B2449A0041281F /* SceneDelegate.swift */; };
+		4AEF46B328B2449A0041281F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46B228B2449A0041281F /* ViewController.swift */; };
+		4AEF46B628B2449A0041281F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEF46B428B2449A0041281F /* Main.storyboard */; };
+		4AEF46B828B244A70041281F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AEF46B728B244A70041281F /* Assets.xcassets */; };
+		4AEF46BB28B244A70041281F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEF46B928B244A70041281F /* LaunchScreen.storyboard */; };
+		4AEF46C628B244A70041281F /* Uno_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46C528B244A70041281F /* Uno_TrackerTests.swift */; };
+		4AEF46D028B244A80041281F /* Uno_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46CF28B244A80041281F /* Uno_TrackerUITests.swift */; };
+		4AEF46D228B244A80041281F /* Uno_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46D128B244A80041281F /* Uno_TrackerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AEF46C228B244A70041281F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AEF46A328B2449A0041281F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AEF46AA28B2449A0041281F;
+			remoteInfo = "Uno Tracker";
+		};
+		4AEF46CC28B244A80041281F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AEF46A328B2449A0041281F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AEF46AA28B2449A0041281F;
+			remoteInfo = "Uno Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4AEF46AB28B2449A0041281F /* Uno Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uno Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AEF46AE28B2449A0041281F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4AEF46B028B2449A0041281F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4AEF46B228B2449A0041281F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4AEF46B528B2449A0041281F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AEF46B728B244A70041281F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AEF46BA28B244A70041281F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AEF46BC28B244A70041281F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AEF46C128B244A70041281F /* Uno TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Uno TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AEF46C528B244A70041281F /* Uno_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uno_TrackerTests.swift; sourceTree = "<group>"; };
+		4AEF46CB28B244A80041281F /* Uno TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Uno TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AEF46CF28B244A80041281F /* Uno_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uno_TrackerUITests.swift; sourceTree = "<group>"; };
+		4AEF46D128B244A80041281F /* Uno_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uno_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AEF46A828B2449A0041281F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AEF46BE28B244A70041281F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AEF46C828B244A80041281F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AEF46A228B2449A0041281F = {
+			isa = PBXGroup;
+			children = (
+				4AEF46AD28B2449A0041281F /* Uno Tracker */,
+				4AEF46C428B244A70041281F /* Uno TrackerTests */,
+				4AEF46CE28B244A80041281F /* Uno TrackerUITests */,
+				4AEF46AC28B2449A0041281F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4AEF46AC28B2449A0041281F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AEF46AB28B2449A0041281F /* Uno Tracker.app */,
+				4AEF46C128B244A70041281F /* Uno TrackerTests.xctest */,
+				4AEF46CB28B244A80041281F /* Uno TrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AEF46AD28B2449A0041281F /* Uno Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				4AEF46AE28B2449A0041281F /* AppDelegate.swift */,
+				4AEF46B028B2449A0041281F /* SceneDelegate.swift */,
+				4AEF46B228B2449A0041281F /* ViewController.swift */,
+				4AEF46B428B2449A0041281F /* Main.storyboard */,
+				4AEF46B728B244A70041281F /* Assets.xcassets */,
+				4AEF46B928B244A70041281F /* LaunchScreen.storyboard */,
+				4AEF46BC28B244A70041281F /* Info.plist */,
+			);
+			path = "Uno Tracker";
+			sourceTree = "<group>";
+		};
+		4AEF46C428B244A70041281F /* Uno TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AEF46C528B244A70041281F /* Uno_TrackerTests.swift */,
+			);
+			path = "Uno TrackerTests";
+			sourceTree = "<group>";
+		};
+		4AEF46CE28B244A80041281F /* Uno TrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4AEF46CF28B244A80041281F /* Uno_TrackerUITests.swift */,
+				4AEF46D128B244A80041281F /* Uno_TrackerUITestsLaunchTests.swift */,
+			);
+			path = "Uno TrackerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AEF46AA28B2449A0041281F /* Uno Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AEF46D528B244A80041281F /* Build configuration list for PBXNativeTarget "Uno Tracker" */;
+			buildPhases = (
+				4AEF46A728B2449A0041281F /* Sources */,
+				4AEF46A828B2449A0041281F /* Frameworks */,
+				4AEF46A928B2449A0041281F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Uno Tracker";
+			productName = "Uno Tracker";
+			productReference = 4AEF46AB28B2449A0041281F /* Uno Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4AEF46C028B244A70041281F /* Uno TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AEF46D828B244A80041281F /* Build configuration list for PBXNativeTarget "Uno TrackerTests" */;
+			buildPhases = (
+				4AEF46BD28B244A70041281F /* Sources */,
+				4AEF46BE28B244A70041281F /* Frameworks */,
+				4AEF46BF28B244A70041281F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AEF46C328B244A70041281F /* PBXTargetDependency */,
+			);
+			name = "Uno TrackerTests";
+			productName = "Uno TrackerTests";
+			productReference = 4AEF46C128B244A70041281F /* Uno TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4AEF46CA28B244A80041281F /* Uno TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AEF46DB28B244A80041281F /* Build configuration list for PBXNativeTarget "Uno TrackerUITests" */;
+			buildPhases = (
+				4AEF46C728B244A80041281F /* Sources */,
+				4AEF46C828B244A80041281F /* Frameworks */,
+				4AEF46C928B244A80041281F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AEF46CD28B244A80041281F /* PBXTargetDependency */,
+			);
+			name = "Uno TrackerUITests";
+			productName = "Uno TrackerUITests";
+			productReference = 4AEF46CB28B244A80041281F /* Uno TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AEF46A328B2449A0041281F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					4AEF46AA28B2449A0041281F = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					4AEF46C028B244A70041281F = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 4AEF46AA28B2449A0041281F;
+					};
+					4AEF46CA28B244A80041281F = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 4AEF46AA28B2449A0041281F;
+					};
+				};
+			};
+			buildConfigurationList = 4AEF46A628B2449A0041281F /* Build configuration list for PBXProject "Uno Tracker" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AEF46A228B2449A0041281F;
+			productRefGroup = 4AEF46AC28B2449A0041281F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AEF46AA28B2449A0041281F /* Uno Tracker */,
+				4AEF46C028B244A70041281F /* Uno TrackerTests */,
+				4AEF46CA28B244A80041281F /* Uno TrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AEF46A928B2449A0041281F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AEF46BB28B244A70041281F /* LaunchScreen.storyboard in Resources */,
+				4AEF46B828B244A70041281F /* Assets.xcassets in Resources */,
+				4AEF46B628B2449A0041281F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AEF46BF28B244A70041281F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AEF46C928B244A80041281F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AEF46A728B2449A0041281F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AEF46B328B2449A0041281F /* ViewController.swift in Sources */,
+				4AEF46AF28B2449A0041281F /* AppDelegate.swift in Sources */,
+				4AEF46B128B2449A0041281F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AEF46BD28B244A70041281F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AEF46C628B244A70041281F /* Uno_TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AEF46C728B244A80041281F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AEF46D228B244A80041281F /* Uno_TrackerUITestsLaunchTests.swift in Sources */,
+				4AEF46D028B244A80041281F /* Uno_TrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AEF46C328B244A70041281F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AEF46AA28B2449A0041281F /* Uno Tracker */;
+			targetProxy = 4AEF46C228B244A70041281F /* PBXContainerItemProxy */;
+		};
+		4AEF46CD28B244A80041281F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AEF46AA28B2449A0041281F /* Uno Tracker */;
+			targetProxy = 4AEF46CC28B244A80041281F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4AEF46B428B2449A0041281F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AEF46B528B2449A0041281F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4AEF46B928B244A70041281F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AEF46BA28B244A70041281F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AEF46D328B244A80041281F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4AEF46D428B244A80041281F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AEF46D628B244A80041281F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FM3Z9CPUQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Uno Tracker/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tech.ishambuilds.Uno-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AEF46D728B244A80041281F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FM3Z9CPUQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Uno Tracker/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tech.ishambuilds.Uno-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4AEF46D928B244A80041281F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FM3Z9CPUQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tech.ishambuilds.Uno-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uno Tracker.app/Uno Tracker";
+			};
+			name = Debug;
+		};
+		4AEF46DA28B244A80041281F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FM3Z9CPUQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tech.ishambuilds.Uno-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uno Tracker.app/Uno Tracker";
+			};
+			name = Release;
+		};
+		4AEF46DC28B244A80041281F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FM3Z9CPUQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tech.ishambuilds.Uno-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Uno Tracker";
+			};
+			name = Debug;
+		};
+		4AEF46DD28B244A80041281F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FM3Z9CPUQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tech.ishambuilds.Uno-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Uno Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AEF46A628B2449A0041281F /* Build configuration list for PBXProject "Uno Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AEF46D328B244A80041281F /* Debug */,
+				4AEF46D428B244A80041281F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AEF46D528B244A80041281F /* Build configuration list for PBXNativeTarget "Uno Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AEF46D628B244A80041281F /* Debug */,
+				4AEF46D728B244A80041281F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AEF46D828B244A80041281F /* Build configuration list for PBXNativeTarget "Uno TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AEF46D928B244A80041281F /* Debug */,
+				4AEF46DA28B244A80041281F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AEF46DB28B244A80041281F /* Build configuration list for PBXNativeTarget "Uno TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AEF46DC28B244A80041281F /* Debug */,
+				4AEF46DD28B244A80041281F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AEF46A328B2449A0041281F /* Project object */;
+}
