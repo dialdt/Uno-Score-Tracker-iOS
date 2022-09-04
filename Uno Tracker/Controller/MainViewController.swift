@@ -60,7 +60,7 @@ class MainViewController: UIViewController, playerDetailDelegate {
     
     func loadScores() {
         
-        db.collection("teams").document(userId)
+        db.collection("teams").document(userID)
             .addSnapshotListener { [self] documentSnapshot, error in
                 
               self.scores = []
