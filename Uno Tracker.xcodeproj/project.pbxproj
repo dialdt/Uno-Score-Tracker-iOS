@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A88C8B428B55F190028FF6E /* AddPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88C8B328B55F190028FF6E /* AddPlayerViewController.swift */; };
+		4A88C8B628C279F70028FF6E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88C8B528C279F60028FF6E /* Constants.swift */; };
+		4AB644F028C3AFE70041E051 /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB644EF28C3AFE70041E051 /* PlayerDetailViewController.swift */; };
 		4AEF46AF28B2449A0041281F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46AE28B2449A0041281F /* AppDelegate.swift */; };
 		4AEF46B128B2449A0041281F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46B028B2449A0041281F /* SceneDelegate.swift */; };
-		4AEF46B328B2449A0041281F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46B228B2449A0041281F /* ViewController.swift */; };
+		4AEF46B328B2449A0041281F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46B228B2449A0041281F /* MainViewController.swift */; };
 		4AEF46B628B2449A0041281F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEF46B428B2449A0041281F /* Main.storyboard */; };
 		4AEF46B828B244A70041281F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AEF46B728B244A70041281F /* Assets.xcassets */; };
 		4AEF46BB28B244A70041281F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEF46B928B244A70041281F /* LaunchScreen.storyboard */; };
 		4AEF46C628B244A70041281F /* Uno_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46C528B244A70041281F /* Uno_TrackerTests.swift */; };
 		4AEF46D028B244A80041281F /* Uno_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46CF28B244A80041281F /* Uno_TrackerUITests.swift */; };
 		4AEF46D228B244A80041281F /* Uno_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46D128B244A80041281F /* Uno_TrackerUITestsLaunchTests.swift */; };
+		4AEF46E028B249D60041281F /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46DE28B249D60041281F /* PlayerTableViewCell.swift */; };
+		4AEF46E128B249D60041281F /* PlayerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AEF46DF28B249D60041281F /* PlayerTableViewCell.xib */; };
+		4AEF46E628B2673F0041281F /* UnoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46E528B2673F0041281F /* UnoDataModel.swift */; };
+		4AEF46E828B267D00041281F /* UnoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46E728B267D00041281F /* UnoDataManager.swift */; };
+		4AEF46EA28B269B30041281F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AEF46E928B269B30041281F /* GoogleService-Info.plist */; };
+		4AEF46FF28B39F9B0041281F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46FE28B39F9B0041281F /* LoginViewController.swift */; };
+		744C7B8282900942614CA8FA /* Pods_Uno_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C384253A0AFFADE895BA6DE2 /* Pods_Uno_Tracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36A7E0E80CC67D16AB22F7B8 /* Pods-Uno Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uno Tracker.release.xcconfig"; path = "Target Support Files/Pods-Uno Tracker/Pods-Uno Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		4A88C8B328B55F190028FF6E /* AddPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerViewController.swift; sourceTree = "<group>"; };
+		4A88C8B528C279F60028FF6E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4AB644EF28C3AFE70041E051 /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
 		4AEF46AB28B2449A0041281F /* Uno Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uno Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEF46AE28B2449A0041281F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AEF46B028B2449A0041281F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4AEF46B228B2449A0041281F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4AEF46B228B2449A0041281F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4AEF46B528B2449A0041281F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4AEF46B728B244A70041281F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AEF46BA28B244A70041281F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +63,14 @@
 		4AEF46CB28B244A80041281F /* Uno TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Uno TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEF46CF28B244A80041281F /* Uno_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uno_TrackerUITests.swift; sourceTree = "<group>"; };
 		4AEF46D128B244A80041281F /* Uno_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uno_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4AEF46DE28B249D60041281F /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+		4AEF46DF28B249D60041281F /* PlayerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerTableViewCell.xib; sourceTree = "<group>"; };
+		4AEF46E528B2673F0041281F /* UnoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnoDataModel.swift; sourceTree = "<group>"; };
+		4AEF46E728B267D00041281F /* UnoDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnoDataManager.swift; sourceTree = "<group>"; };
+		4AEF46E928B269B30041281F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4AEF46FE28B39F9B0041281F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		79521FE6CE56AB4FA94C1B4A /* Pods-Uno Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uno Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Uno Tracker/Pods-Uno Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		C384253A0AFFADE895BA6DE2 /* Pods_Uno_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uno_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				744C7B8282900942614CA8FA /* Pods_Uno_Tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011E970863B3BE4E4C503CE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79521FE6CE56AB4FA94C1B4A /* Pods-Uno Tracker.debug.xcconfig */,
+				36A7E0E80CC67D16AB22F7B8 /* Pods-Uno Tracker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4AEF46A228B2449A0041281F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +115,8 @@
 				4AEF46C428B244A70041281F /* Uno TrackerTests */,
 				4AEF46CE28B244A80041281F /* Uno TrackerUITests */,
 				4AEF46AC28B2449A0041281F /* Products */,
+				011E970863B3BE4E4C503CE9 /* Pods */,
+				E5682AB350DCF97DA94DB79B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +133,16 @@
 		4AEF46AD28B2449A0041281F /* Uno Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				4AEF46E428B266EA0041281F /* Model */,
+				4AEF46E328B266E00041281F /* View */,
+				4AEF46E228B266CF0041281F /* Controller */,
 				4AEF46AE28B2449A0041281F /* AppDelegate.swift */,
 				4AEF46B028B2449A0041281F /* SceneDelegate.swift */,
-				4AEF46B228B2449A0041281F /* ViewController.swift */,
-				4AEF46B428B2449A0041281F /* Main.storyboard */,
 				4AEF46B728B244A70041281F /* Assets.xcassets */,
 				4AEF46B928B244A70041281F /* LaunchScreen.storyboard */,
+				4A88C8B528C279F60028FF6E /* Constants.swift */,
 				4AEF46BC28B244A70041281F /* Info.plist */,
+				4AEF46E928B269B30041281F /* GoogleService-Info.plist */,
 			);
 			path = "Uno Tracker";
 			sourceTree = "<group>";
@@ -127,6 +164,44 @@
 			path = "Uno TrackerUITests";
 			sourceTree = "<group>";
 		};
+		4AEF46E228B266CF0041281F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4AEF46B228B2449A0041281F /* MainViewController.swift */,
+				4AEF46FE28B39F9B0041281F /* LoginViewController.swift */,
+				4A88C8B328B55F190028FF6E /* AddPlayerViewController.swift */,
+				4AB644EF28C3AFE70041E051 /* PlayerDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4AEF46E328B266E00041281F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4AEF46DE28B249D60041281F /* PlayerTableViewCell.swift */,
+				4AEF46DF28B249D60041281F /* PlayerTableViewCell.xib */,
+				4AEF46B428B2449A0041281F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4AEF46E428B266EA0041281F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4AEF46E728B267D00041281F /* UnoDataManager.swift */,
+				4AEF46E528B2673F0041281F /* UnoDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5682AB350DCF97DA94DB79B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C384253A0AFFADE895BA6DE2 /* Pods_Uno_Tracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,15 +209,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AEF46D528B244A80041281F /* Build configuration list for PBXNativeTarget "Uno Tracker" */;
 			buildPhases = (
+				751C63CF0A0C5DB229AF0492 /* [CP] Check Pods Manifest.lock */,
 				4AEF46A728B2449A0041281F /* Sources */,
 				4AEF46A828B2449A0041281F /* Frameworks */,
 				4AEF46A928B2449A0041281F /* Resources */,
+				5ED5C1944A82312E8769B1E8 /* [CP] Embed Pods Frameworks */,
+				D48CE07B4D9F2B8212959F0A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Uno Tracker";
+			packageProductDependencies = (
+			);
 			productName = "Uno Tracker";
 			productReference = 4AEF46AB28B2449A0041281F /* Uno Tracker.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +295,9 @@
 				Base,
 			);
 			mainGroup = 4AEF46A228B2449A0041281F;
+			packageReferences = (
+				4A88C8B228B3F90B0028FF6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 4AEF46AC28B2449A0041281F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +315,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AEF46BB28B244A70041281F /* LaunchScreen.storyboard in Resources */,
+				4AEF46E128B249D60041281F /* PlayerTableViewCell.xib in Resources */,
+				4AEF46EA28B269B30041281F /* GoogleService-Info.plist in Resources */,
 				4AEF46B828B244A70041281F /* Assets.xcassets in Resources */,
 				4AEF46B628B2449A0041281F /* Main.storyboard in Resources */,
 			);
@@ -253,14 +338,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5ED5C1944A82312E8769B1E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Uno Tracker/Pods-Uno Tracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Uno Tracker/Pods-Uno Tracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Uno Tracker/Pods-Uno Tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		751C63CF0A0C5DB229AF0492 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Uno Tracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D48CE07B4D9F2B8212959F0A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Uno Tracker/Pods-Uno Tracker-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Uno Tracker/Pods-Uno Tracker-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Uno Tracker/Pods-Uno Tracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4AEF46A728B2449A0041281F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AEF46B328B2449A0041281F /* ViewController.swift in Sources */,
+				4AEF46FF28B39F9B0041281F /* LoginViewController.swift in Sources */,
+				4AEF46B328B2449A0041281F /* MainViewController.swift in Sources */,
+				4AEF46E028B249D60041281F /* PlayerTableViewCell.swift in Sources */,
+				4AEF46E828B267D00041281F /* UnoDataManager.swift in Sources */,
 				4AEF46AF28B2449A0041281F /* AppDelegate.swift in Sources */,
+				4A88C8B428B55F190028FF6E /* AddPlayerViewController.swift in Sources */,
 				4AEF46B128B2449A0041281F /* SceneDelegate.swift in Sources */,
+				4AEF46E628B2673F0041281F /* UnoDataModel.swift in Sources */,
+				4AB644F028C3AFE70041E051 /* PlayerDetailViewController.swift in Sources */,
+				4A88C8B628C279F70028FF6E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +583,7 @@
 		};
 		4AEF46D628B244A80041281F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79521FE6CE56AB4FA94C1B4A /* Pods-Uno Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +612,7 @@
 		};
 		4AEF46D728B244A80041281F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36A7E0E80CC67D16AB22F7B8 /* Pods-Uno Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -602,6 +755,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A88C8B228B3F90B0028FF6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 4AEF46A328B2449A0041281F /* Project object */;
 }
