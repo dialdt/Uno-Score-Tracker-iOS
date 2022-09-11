@@ -10,6 +10,11 @@
 		4A88C8B428B55F190028FF6E /* AddPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88C8B328B55F190028FF6E /* AddPlayerViewController.swift */; };
 		4A88C8B628C279F70028FF6E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88C8B528C279F60028FF6E /* Constants.swift */; };
 		4AB644F028C3AFE70041E051 /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB644EF28C3AFE70041E051 /* PlayerDetailViewController.swift */; };
+		4AB644F228CB5D310041E051 /* HouseRulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB644F128CB5D310041E051 /* HouseRulesViewController.swift */; };
+		4AB644F528CBC1180041E051 /* RuleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB644F328CBC1170041E051 /* RuleTableViewCell.swift */; };
+		4AB644F628CBC1180041E051 /* RuleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AB644F428CBC1170041E051 /* RuleTableViewCell.xib */; };
+		4AB644F828CC67CE0041E051 /* GameRulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB644F728CC67CD0041E051 /* GameRulesViewController.swift */; };
+		4AB644FA28CC70EA0041E051 /* AddRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB644F928CC70EA0041E051 /* AddRuleViewController.swift */; };
 		4AEF46AF28B2449A0041281F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46AE28B2449A0041281F /* AppDelegate.swift */; };
 		4AEF46B128B2449A0041281F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46B028B2449A0041281F /* SceneDelegate.swift */; };
 		4AEF46B328B2449A0041281F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF46B228B2449A0041281F /* MainViewController.swift */; };
@@ -50,6 +55,11 @@
 		4A88C8B328B55F190028FF6E /* AddPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerViewController.swift; sourceTree = "<group>"; };
 		4A88C8B528C279F60028FF6E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4AB644EF28C3AFE70041E051 /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
+		4AB644F128CB5D310041E051 /* HouseRulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRulesViewController.swift; sourceTree = "<group>"; };
+		4AB644F328CBC1170041E051 /* RuleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleTableViewCell.swift; sourceTree = "<group>"; };
+		4AB644F428CBC1170041E051 /* RuleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RuleTableViewCell.xib; sourceTree = "<group>"; };
+		4AB644F728CC67CD0041E051 /* GameRulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRulesViewController.swift; sourceTree = "<group>"; };
+		4AB644F928CC70EA0041E051 /* AddRuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRuleViewController.swift; sourceTree = "<group>"; };
 		4AEF46AB28B2449A0041281F /* Uno Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uno Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEF46AE28B2449A0041281F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AEF46B028B2449A0041281F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,9 +178,12 @@
 			isa = PBXGroup;
 			children = (
 				4AEF46B228B2449A0041281F /* MainViewController.swift */,
+				4AB644F128CB5D310041E051 /* HouseRulesViewController.swift */,
 				4AEF46FE28B39F9B0041281F /* LoginViewController.swift */,
 				4A88C8B328B55F190028FF6E /* AddPlayerViewController.swift */,
 				4AB644EF28C3AFE70041E051 /* PlayerDetailViewController.swift */,
+				4AB644F728CC67CD0041E051 /* GameRulesViewController.swift */,
+				4AB644F928CC70EA0041E051 /* AddRuleViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +194,8 @@
 				4AEF46DE28B249D60041281F /* PlayerTableViewCell.swift */,
 				4AEF46DF28B249D60041281F /* PlayerTableViewCell.xib */,
 				4AEF46B428B2449A0041281F /* Main.storyboard */,
+				4AB644F328CBC1170041E051 /* RuleTableViewCell.swift */,
+				4AB644F428CBC1170041E051 /* RuleTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -319,6 +334,7 @@
 				4AEF46EA28B269B30041281F /* GoogleService-Info.plist in Resources */,
 				4AEF46B828B244A70041281F /* Assets.xcassets in Resources */,
 				4AEF46B628B2449A0041281F /* Main.storyboard in Resources */,
+				4AB644F628CBC1180041E051 /* RuleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,10 +418,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AB644FA28CC70EA0041E051 /* AddRuleViewController.swift in Sources */,
 				4AEF46FF28B39F9B0041281F /* LoginViewController.swift in Sources */,
 				4AEF46B328B2449A0041281F /* MainViewController.swift in Sources */,
 				4AEF46E028B249D60041281F /* PlayerTableViewCell.swift in Sources */,
 				4AEF46E828B267D00041281F /* UnoDataManager.swift in Sources */,
+				4AB644F228CB5D310041E051 /* HouseRulesViewController.swift in Sources */,
+				4AB644F528CBC1180041E051 /* RuleTableViewCell.swift in Sources */,
+				4AB644F828CC67CE0041E051 /* GameRulesViewController.swift in Sources */,
 				4AEF46AF28B2449A0041281F /* AppDelegate.swift in Sources */,
 				4A88C8B428B55F190028FF6E /* AddPlayerViewController.swift in Sources */,
 				4AEF46B128B2449A0041281F /* SceneDelegate.swift in Sources */,

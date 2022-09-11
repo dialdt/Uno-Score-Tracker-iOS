@@ -16,12 +16,13 @@ class MainViewController: UIViewController, playerDetailDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     //@IBOutlet weak var addNewPlayerButton: UIButton!
-    var dataManager = UnoDataManager()
+    var dataManager = UnoGlobalFunctions()
     let db = Firestore.firestore()
-    var scores: [Score] = []
+    var scores: [Player] = []
     var userID: String = ""
     var newPlayer: String = ""
     var currentScore: Double = 0.0
+    var currentWinStreak: Double = 0.0
     //var playerDetail: PlayerDetailViewController?
     
     
@@ -32,7 +33,8 @@ class MainViewController: UIViewController, playerDetailDelegate {
         // Do any additional setup after loading the view.
         tableView.register(UINib(nibName: PlayerTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: PlayerTableViewCell.reuseIdentifier)
         loadScores()
-        print("mainVC userID", userID)
+        //print("mainVC userID", userID)
+        tabBarController?.tabBar.isHidden = false
         //addNewPlayerButton.isHidden = true
         //dataManager.loadScores()
         
@@ -51,7 +53,7 @@ class MainViewController: UIViewController, playerDetailDelegate {
             addPlayerVC.delegate = self
         } else if segue.identifier == K.playerDetailSegue {
             let playerDetailVCNC = segue.destination as! UINavigationController
-            if let playerDetailVC = playerDetailVCNC.topViewController as? PlayerDetailViewController, let data = sender as? Score {
+            if let playerDetailVC = playerDetailVCNC.topViewController as? PlayerDetailViewController, let data = sender as? Player {
                 playerDetailVC.playerData = data
                 playerDetailVC.delegate = self
             }
@@ -75,76 +77,116 @@ class MainViewController: UIViewController, playerDetailDelegate {
                   //If document doesn't exist, create it
                   db.collection("teams").document(userID).setData([
                     //Start with dummy value
-                    "name": "0"
+                    "player.Score": "0",
+                    "player.dateCreated": Date(timeIntervalSince1970: 0),
+                    "player.friendlyName": "newPlayer",
+                    "player.winStreak": "0"
                   ])
                   //and delete the default field
                   //Hide add new player button
                 return
               }
-                //print(data)
-                scores = sortData(sort: data)
-                //print(scores)
-                /*for (name, score) in data {
-                    print(name, score)
-                    if let num = score as? String {
-                        scores.append(Score(name: name, score: num))
-                    }
-                    
-                    //scores.append(Score(name: name, score: score))
-                }*/
                 
-                //sort by score
-                
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                    //let indexPath = IndexPath(row: self.scores.count - 1, section: 0)
-                    //self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
-                
+            scores = sortData(sort: data)
+            
+
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
             }
-                //print(scores.count)
+
         }
         
     }
     
-    func sortData(sort data: [String: Any]) -> [Score] {
-        var i: [String: Double] = [:]
-        var output: [Score] = []
-        for (name, score) in data {
-            if let num = score as? String {
-                let s = Double(num)
-                i[name] = s
+    func sortData(sort data: [String: Any]) -> [Player] {
+        var i: [Player] = []
+        var output: [Player] = []
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        for (key, value) in data {
+            if let playerData = data[key] as? [String: Any] {
+                let playerName = playerData["friendlyName"] as? String ?? ""
+                let playerScore = playerData["Score"] as? Int ?? 0
+                let playerCreatedDate = convertTimestampToTimeInterval(using: playerData["dateCreated"] as? Timestamp ?? Timestamp(seconds: 0, nanoseconds: 0))
+                let playerWins = playerData["wins"] as? Int ?? 0
+                let playerLoses = playerData["loses"] as? Int ?? 0
+                let playerLastWin = convertTimestampToTimeInterval(using: playerData["lastWin"] as? Timestamp ?? Timestamp(seconds: 0, nanoseconds: 0))
+                //convertTimestampToDate(using: (playerData["dateCreated"] as! Timestamp))
+                let playerWinStreak = playerData["winStreak"] as? Int ?? 0
+                i.append(Player(name: playerName, score: playerScore, winStreak: playerWinStreak, dateCreated: playerCreatedDate, wins: playerWins, loses: playerLoses, lastWin: playerLastWin))
             }
-            
         }
-        let sortedData = i.sorted(by: {$0.value > $1.value})
         
-        for (key, value) in sortedData {
-            output.append(Score(name: key, score: String(format: "%.0f", value)))
-        }
+        output = i.sorted(by: {$0.score > $1.score})
         
         return output
         
     }
     
+    func convertTimestampToTimeInterval(using data: Timestamp) -> TimeInterval {
+        //var outputDate: Date = Date(timeIntervalSince1970: 0)
+        if let timestamp = data as? Timestamp {
+            let date = timestamp.dateValue()
+            let timeInSeconds = timestamp.seconds
+            print("time in seconds", timeInSeconds)
+            return TimeInterval(timeInSeconds)
+        }
+    }
+    
     func addNewPlayer(named name: String) {
         db.collection("teams").document(userID)
             .updateData([
-                name: "0"
+                "\(name).Score": 0,
+                "\(name).dateCreated": Date(),
+                "\(name).friendlyName": name,
+                "\(name).winStreak": 0,
+                "\(name).wins": 0,
+                "\(name).loses": 0,
+                "\(name).lastWin": Date(timeIntervalSince1970: 0)
             ])
     }
     
     func updateScores(for player: String, with score: String) {
-        print(player, score)
+        //print(player, score)
         currentScore += Double(score) ?? 0.0
-        print(currentScore)
-        let newScore = String(format: "%.0f", currentScore)
-        print(newScore)
+        currentWinStreak += 1.0
+        //let newScore = String(format: "%.0f", currentScore)
+        //let newWinStreak = String(format: "%0.f", currentWinStreak)
+        //print(newScore)
         db.collection("teams").document(userID)
             .updateData([
-                    player: newScore
+                "\(player).Score": FieldValue.increment(Int64(score) ?? 0),
+                "\(player).winStreak": FieldValue.increment(Int64(1) ?? 0),
+                "\(player).wins": FieldValue.increment(Int64(1) ?? 0)
             ])
         
-
+        for name in filterData(filter: scores, exclude: player) {
+            db.collection("teams").document(userID)
+                .updateData([
+                    "\(name).winStreak": 0,
+                    "\(name).loses": FieldValue.increment(Int64(1))
+                    
+                ])
+        }
+        
+        filterData(filter: scores, exclude: player)
+    }
+    
+    func filterData(filter data: [Player], exclude player: String) -> [String] {
+        let filteredData = data.filter({$0.name != player})
+        var outputArray: [String] = []
+        for i in filteredData {
+            outputArray.append(i.name)
+        }
+        return outputArray
+        
+    }
+    
+    func delete(playerNamed player: String) {
+        db.collection("teams").document(userID)
+            .updateData([
+                player: FieldValue.delete()
+            ])
     }
     
 }
@@ -152,7 +194,7 @@ class MainViewController: UIViewController, playerDetailDelegate {
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //print(tableViewDataSource[section])
-        print(scores.count)
+        //print(scores.count)
         return scores.count
     }
     
@@ -169,7 +211,6 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //print(indexPath.row, scores)
         let data = scores[indexPath.row]
-        currentScore = Double(scores[indexPath.row].score) ?? 0.0
         self.performSegue(withIdentifier: K.playerDetailSegue, sender: data)
         
     }
@@ -191,6 +232,10 @@ extension MainViewController: addPlayerDelegate {
     
     func updateScore(for player: String, with score: String) {
         updateScores(for: player, with: score)
+    }
+    
+    func deletePlayer(named player: String) {
+        delete(playerNamed: player)
     }
     
 }

@@ -16,7 +16,7 @@ import GoogleSignIn
 
 class LoginViewController: UIViewController, GIDSignInDelegate {
     
-    var userId: String = ""
+    var userId: String = "test"
     
     @IBOutlet var signInButton: GIDSignInButton!
     
@@ -26,6 +26,7 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
         
         GIDSignIn.sharedInstance()?.presentingViewController = self
         GIDSignIn.sharedInstance()?.delegate = self
+        tabBarController?.tabBar.isHidden = true
         
 
         //authUI?.delegate = self
@@ -56,7 +57,7 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
             }
             
             print("successful login!", user.profile.email)
-            self.userId = user.profile.email
+            //self.userId = user.profile.email
             self.performSegue(withIdentifier: "toHomeScreen", sender: self)
             
         }

@@ -6,7 +6,19 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
 
-struct UnoDataManager {
+struct UnoGlobalFunctions {
+    
+    static func convertTimestampToTimeInterval(using data: Timestamp) -> TimeInterval {
+        //var outputDate: Date = Date(timeIntervalSince1970: 0)
+        if let timestamp = data as? Timestamp {
+            let date = timestamp.dateValue()
+            let timeInSeconds = timestamp.seconds
+            //print("time in seconds", timeInSeconds)
+            return TimeInterval(timeInSeconds)
+        }
+    }
 
 }

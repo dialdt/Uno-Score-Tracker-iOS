@@ -43,9 +43,9 @@ class PlayerTableViewCell: UITableViewCell {
         return "PlayerTableViewCell"
     }
     
-    func configureResultCell(text: String, score: String) {
+    func configureResultCell(text: String, score: Int) {
         playerName.text = text
-        playerScore.text = score
+        playerScore.text = String(score)
         setIcon(playerNamed: text)
     }
     

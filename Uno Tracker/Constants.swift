@@ -10,4 +10,6 @@ import Foundation
 struct K {
     static let addPlayerSegue = "toAddPlayer"
     static let playerDetailSegue = "toPlayerDetail"
+    static let toHouseRules = "toHouseRules"
+    static let addRuleStoryboard = "addRuleStoryboard"
 }
